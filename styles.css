@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px; /* Establece un ancho máximo para el contenedor */
+    width: 100%; /* Asegura que el contenedor ocupe el ancho completo en dispositivos pequeños */
+    margin: 0 20px; /* Agrega un pequeño margen en los dispositivos grandes para mejorar la legibilidad */
+}
+
+.login-heading {
+    background-color: #8C52FF;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.form-input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 8px;
+}
+
+.login-button {
+    background-color: #8C52FF;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-button:hover {
+    background-color: #7536CC;
+    transform: scale(1.05);
+}
+
+.diagram-link,
+.register-link {
+    text-decoration: none;
+    color: #8C52FF;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.diagram-link:hover,
+.register-link:hover {
+    color: #7536CC;
+}
+
+.input-group {
+    position: relative;
+    width: 100%;
+}
+
+.form-input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 32px;
+}
+
+.toggle-password {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.logo {
+    width: 300px; /* Ajusta el ancho del logo según tus necesidades */
+    margin-bottom: 20px; /*
+
+

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="login-container">
+        <!-- Logo -->
+        <img src="img/2.png" alt="Logo" class="logo">
+
+        <!-- Contenido del formulario de inicio de sesión -->
+        <h1 class="login-heading">Iniciar Sesión</h1>
+        <form action="validador.php" method="post" class="login-form">
+            <!-- Campo de usuario -->
+            <div class="form-group">
+                <label for="usuario" class="form-label">Usuario:</label>
+                <div class="input-group">
+                    <input type="text" id="usuario" name="usuario" class="form-input" required>
+                </div>
+            </div>
+            <!-- Campo de contraseña -->
+            <div class="form-group">
+                <label for="contrasena" class="form-label">Contraseña:</label>
+                <div class="input-group">
+                    <input type="password" id="contrasena" name="contrasena" class="form-input" required>
+                    <span class="toggle-password" onclick="togglePasswordVisibility()">&#x1F441;</span>
+                </div>
+            </div>
+
+            <!-- Botón de inicio de sesión -->
+            <div class="form-group">
+                <button type="submit" class="login-button">Aceptar</button>
+            </div>
+        </form>
+
+        <!-- Botón para ir a la página de registro -->
+        <div class="form-group">
+            <a href="registro.html" class="register-link">¿No tienes una cuenta? Regístrate aquí</a>
+        </div>
+    </div>
+
+    <script>
+        function togglePasswordVisibility() {
+            var passwordInput = document.getElementById("contrasena");
+            var icon = document.querySelector(".toggle-password");
+
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+                icon.textContent = "🙈";
+            } else {
+                passwordInput.type = "password";
+                icon.textContent = "👁️";
+            }
+        }
+    </script>
+</body>
+
+</html>
+
+
+
